@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BPMS</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/other/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/other/assets/css/style.css">
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.rtl.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.rtl.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.rtl.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.rtl.min.css"/>
+    <link rel="icon" href="images/logo.jpeg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="fix-menu">
+<section class="login-block">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <form class="md-float-material form-material">
+                    <div class="auth-box card">
+                        <div class="card-block">
+                            <div class="row m-b-20">
+                                <div class="col-md-12" style="background-color: white;padding: 10px">
+                                    <div class="text-center" style="font-weight: bold;font-size: 20px;color: darkred">DETCWA</div>
+                                </div>
+                            </div>
+                            <div class="form-group form-primary">
+                                <label class="lbl_font font-weight-bold">Account Type</label>
+                                <select class="form-control" id="cmbAccountType">
+                                    <option>Admin</option>
+                                    <option>User</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="lbl_font font-weight-bold">Full Name</label>
+                                        <input type="text" class="form-control form-control-sm" id="txtFullName">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="lbl_font font-weight-bold">User Name</label>
+                                        <input type="text" class="form-control form-control-sm" id="txtUserName">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="lbl_font font-weight-bold">Password</label>
+                                        <input type="password" class="form-control form-control-sm" id="txtPassword">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="lbl_font font-weight-bold">Conform Password</label>
+                                        <input type="password" class="form-control form-control-sm" id="txtConformPassword">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="lbl_font font-weight-bold">Steam URL</label>
+                                        <input type="url" class="form-control form-control-sm" id="txtURL">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="lbl_font font-weight-bold">In Game Rank</label>
+                                        <select class="form-control" id="cmbGameRank">
+                                            <option>Herald</option>
+                                            <option>Guardian</option>
+                                            <option>Crusader</option>
+                                            <option>Archon</option>
+                                            <option>Legend</option>
+                                            <option>Ancient</option>
+                                            <option>Divine</option>
+                                            <option>Immortal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="lbl_font font-weight-bold">In Game Role</label>
+                                        <select class="form-control" id="cmbGameRole">
+                                            <option>Safe Laner</option>
+                                            <option>Mid Laner</option>
+                                            <option>Off Laner</option>
+                                            <option>Soft Support</option>
+                                            <option>Hard Support</option>
+                                            <option>Substitute</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6" style="text-align: left!important;">
+                                    <a class="btn btn-default btn-flat" href="index.html" style="color: darkred">Sign In Now</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-primary btn-flat float-right" id="btnRegister">Register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="assets/other/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="assets/other/bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/other/bower_components/popper.js/dist/umd/popper.min.js"></script>
+<script type="text/javascript" src="assets/other/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/other/assets/js/common-pages.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+<script src="js/controller/sign_upController.js"></script>
+</body>
+</html>
